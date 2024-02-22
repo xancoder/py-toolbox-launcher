@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "py-toolbox-launcher"
+version = "0.1.0"
+description = ""
+authors = ["Alexander Sommer <xancoder@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+cli = "cmd.cli:main"
+build_linux_cli = "scripts.pyinstaller:build_linux_cli"
+build_windows_cli = "scripts.pyinstaller:build_windows_cli"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+pyinstaller = "^6.3.0"
+inquirerpy = "^0.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
