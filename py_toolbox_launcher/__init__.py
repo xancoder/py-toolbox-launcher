@@ -24,7 +24,7 @@ def get_toolbox(system_current: str, path: pathlib.Path) -> dict:
 
     tools_available = {}
     for e in extensions:
-        for i in path.glob(f'**/*.{e}'):
+        for i in path.glob(f'*.{e}'):
             if i.is_file():
                 description = extract_description(i)
                 tools_available.update({

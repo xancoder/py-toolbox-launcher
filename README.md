@@ -24,7 +24,7 @@ tested in an unattended virtualbox debian 12 virtual machine installation
 
 in a shell at project folder use the following commands
 
-```PowerShell
+```bash
 chmod +x ./scripts/build_linux.sh 
 ./scripts/build_linux.sh
 ```

@@ -6,4 +6,4 @@ poetry install
 poetry run build_linux_cli
 
 mkdir -p dist/toolbox
-cp toolbox/Linux/* dist/toolbox/
+cp toolbox/*.sh dist/toolbox/
